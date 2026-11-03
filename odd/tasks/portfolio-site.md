@@ -24,8 +24,8 @@ A job application requires a portfolio, and the GitHub profile alone undersells 
 - Test-first exception: static content site with no runner and no meaningful RED. Checks are lint, type-check, production build and rendered-output assertions.
 
 ## Tasks
-- [x] T1 Scaffold Next.js (App Router, TypeScript, `src/`) and clean repository ignores. Commit: `chore: scaffold next.js app`.
-- [ ] T2 Implement typed content and all sections.
+- [x] T1 Scaffold Next.js (App Router, TypeScript, `src/`) and clean repository ignores. Commit: `b84fc30`.
+- [x] T2 Implement typed content and all sections. Commit: `feat: add portfolio content and sections`.
 - [ ] T3 Apply visual design, responsive behavior, dark mode, metadata, sitemap, robots and not-found page.
 - [ ] T4 Verify independently: lint, build, phone absent from output, responsive render.
 
@@ -39,6 +39,7 @@ A job application requires a portfolio, and the GitHub profile alone undersells 
 Branch `feat/portfolio-site` created. `.DS_Store` and `.idea` unstaged.
 
 - T1: Next.js 16.4.4 scaffolded; lint, type-check and production build passed on the stripped scaffold.
+- T2: Content in `src/content/portfolio.ts`, sections as Server Components. Project descriptions based on the public READMEs. Lint, type-check and build passed.
 
 ## Pending user input
 - Results metrics for the case studies (optional).
@@ -46,4 +47,4 @@ Branch `feat/portfolio-site` created. `.DS_Store` and `.idea` unstaged.
 - Confirmation that the contract allows publishing the case-study detail.
 
 ## Next step
-T2.
+T3.
