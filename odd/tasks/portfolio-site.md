@@ -25,8 +25,8 @@ A job application requires a portfolio, and the GitHub profile alone undersells 
 
 ## Tasks
 - [x] T1 Scaffold Next.js (App Router, TypeScript, `src/`) and clean repository ignores. Commit: `b84fc30`.
-- [x] T2 Implement typed content and all sections. Commit: `feat: add portfolio content and sections`.
-- [ ] T3 Apply visual design, responsive behavior, dark mode, metadata, sitemap, robots and not-found page.
+- [x] T2 Implement typed content and all sections. Commit: `f54a641`.
+- [x] T3 Apply visual design, responsive behavior, dark mode, metadata, sitemap, robots and not-found page. Commit: `feat: apply dossier design and site metadata`.
 - [ ] T4 Verify independently: lint, build, phone absent from output, responsive render.
 
 ## Acceptance criteria
@@ -40,6 +40,7 @@ Branch `feat/portfolio-site` created. `.DS_Store` and `.idea` unstaged.
 
 - T1: Next.js 16.4.4 scaffolded; lint, type-check and production build passed on the stripped scaffold.
 - T2: Content in `src/content/portfolio.ts`, sections as Server Components. Project descriptions based on the public READMEs. Lint, type-check and build passed.
+- T3: Dossier design applied. Accent `#d9381e` is 4.0:1 on paper, so text uses `#b82a13` (5.4:1) in light mode and `#ff6b4a` (6.5:1) in dark mode. Device emulation at 320px and 375px measured no horizontal overflow. Lint, type-check, build and rendered-output checks passed.
 
 ## Pending user input
 - Results metrics for the case studies (optional).
@@ -47,4 +48,4 @@ Branch `feat/portfolio-site` created. `.DS_Store` and `.idea` unstaged.
 - Confirmation that the contract allows publishing the case-study detail.
 
 ## Next step
-T3.
+T4.
