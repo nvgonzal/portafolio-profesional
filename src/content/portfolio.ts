@@ -81,12 +81,12 @@ export const cvUrl: string | null = null;
 export const caseStudies: CaseStudy[] = [
   {
     slug: "crm-erp",
-    title: "Programación de tareas técnicas y aprovisionamiento en un CRM/ERP",
+    title: "Agendamiento de tareas técnicas y provisión de servicios en un CRM/ERP",
     context:
-      "Un CRM/ERP corporativo concentra buena parte de la operación diaria de una empresa. Programar tareas técnicas define quién atiende cada trabajo y cuándo; aprovisionar un servicio es el paso que lo deja listo para usarse.",
+      "Un CRM/ERP corporativo concentra buena parte de la operación diaria de una empresa. Agendar tareas técnicas define quién atiende cada trabajo y cuándo; la provisión es el paso que deja un servicio listo para usarse.",
     contribution: [
       "Desarrollé y mejoré el CRM/ERP corporativo.",
-      "Construí un módulo de programación de tareas técnicas y un módulo de aprovisionamiento de servicios.",
+      "Trabajé en sus módulos de agendamiento de tareas técnicas y de provisión de servicios.",
     ],
     technologies: ["Laravel", "React"],
   },
