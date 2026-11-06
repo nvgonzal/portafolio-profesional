@@ -137,6 +137,20 @@ export const projects: Project[] = [
     technologies: ["Laravel", "Vue", "MySQL", "PHPUnit"],
     repositoryUrl: "https://github.com/nvgonzal/atlas-mundial-web",
   },
+  {
+    name: "tarea2-redes-ubb-2017-01",
+    description:
+      "Proyecto académico del curso de Comunicación de Datos y Redes de la Universidad del Bío-Bío (2017): una aplicación cliente-servidor de transmisión de video. El control viaja por TCP y los frames de imagen por UDP con DatagramSocket; el servidor atiende a cada cliente en su propio hilo y registra la actividad con un logger de terminal propio.",
+    technologies: ["Java", "Sockets TCP/UDP", "Multithreading", "Swing"],
+    repositoryUrl: "https://github.com/nvgonzal/tarea2-redes-ubb-2017-01",
+  },
+  {
+    name: "proyecto-ia-2016-01-ubb",
+    description:
+      "Proyecto académico del curso de Inteligencia Artificial de la Universidad del Bío-Bío (2016): un juego de laberinto donde un adversario controlado por IA persigue al jugador usando búsqueda en profundidad (DFS) sobre el espacio de estados. Interfaz en Swing con menú, configuración y música de fondo.",
+    technologies: ["Java", "Swing", "Algoritmos de búsqueda", "Ant"],
+    repositoryUrl: "https://github.com/nvgonzal/proyecto-ia-2016-01-ubb",
+  },
 ];
 
 export const stackGroups: StackGroup[] = [
@@ -145,6 +159,7 @@ export const stackGroups: StackGroup[] = [
     items: [
       "PHP",
       "Python",
+      "Java",
       "TypeScript",
       "Laravel",
       "Flask",
