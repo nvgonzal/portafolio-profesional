@@ -26,6 +26,14 @@ export type CaseStudy = {
   outcome?: string;
 };
 
+/** Technology icon identifiers, mapped to brand marks in TechIcon. */
+export type TechIconId =
+  | "nestjs"
+  | "typescript"
+  | "laravel"
+  | "vuedotjs"
+  | "openjdk";
+
 export type Project = {
   name: string;
   description: string;
@@ -33,6 +41,8 @@ export type Project = {
   repositoryUrl: string;
   /** Optional live demo. Rendered only when set. */
   demoUrl?: string;
+  /** Up to two main-technology icons shown next to the title. */
+  icons?: [TechIconId] | [TechIconId, TechIconId];
 };
 
 export type StackGroup = {
@@ -53,6 +63,8 @@ export type Education = {
   degree: string;
   institution: string;
   year: string;
+  /** Optional monochrome institution mark (public path). Rendered only when set. */
+  logo?: string;
 };
 
 export const profile: Profile = {
@@ -129,6 +141,7 @@ export const projects: Project[] = [
       "Proyecto de aprendizaje de Nest.js: una API de notificaciones con autenticación JWT, arquitectura orientada a eventos y colas de trabajo para enviar correos transaccionales fuera del request. Incluye documentación Swagger y pruebas unitarias con Jest.",
     technologies: ["Nest.js", "TypeScript", "MySQL", "Redis", "BullMQ"],
     repositoryUrl: "https://github.com/nvgonzal/api-notificador-nest",
+    icons: ["nestjs", "typescript"],
   },
   {
     name: "atlas-mundial-web",
@@ -136,6 +149,7 @@ export const projects: Project[] = [
       "Explorador de información de países hecho con Laravel y Vue, que consume la API externa REST Countries. Es un ejemplo práctico de integración por capas: cliente HTTP dedicado, servicio, DTOs y excepciones propias.",
     technologies: ["Laravel", "Vue", "MySQL", "PHPUnit"],
     repositoryUrl: "https://github.com/nvgonzal/atlas-mundial-web",
+    icons: ["laravel", "vuedotjs"],
   },
   {
     name: "tarea2-redes-ubb-2017-01",
@@ -143,6 +157,7 @@ export const projects: Project[] = [
       "Proyecto académico del curso de Comunicación de Datos y Redes de la Universidad del Bío-Bío (2017): una aplicación cliente-servidor de transmisión de video. El control viaja por TCP y los frames de imagen por UDP con DatagramSocket; el servidor atiende a cada cliente en su propio hilo y registra la actividad con un logger de terminal propio.",
     technologies: ["Java", "Sockets TCP/UDP", "Multithreading", "Swing"],
     repositoryUrl: "https://github.com/nvgonzal/tarea2-redes-ubb-2017-01",
+    icons: ["openjdk"],
   },
   {
     name: "proyecto-ia-2016-01-ubb",
@@ -150,6 +165,7 @@ export const projects: Project[] = [
       "Proyecto académico del curso de Inteligencia Artificial de la Universidad del Bío-Bío (2016): un juego de laberinto donde un adversario controlado por IA persigue al jugador usando búsqueda en profundidad (DFS) sobre el espacio de estados. Interfaz en Swing con menú, configuración y música de fondo.",
     technologies: ["Java", "Swing", "Algoritmos de búsqueda", "Ant"],
     repositoryUrl: "https://github.com/nvgonzal/proyecto-ia-2016-01-ubb",
+    icons: ["openjdk"],
   },
 ];
 
@@ -221,6 +237,7 @@ export const education: Education[] = [
     degree: "Ingeniero de Ejecución en Computación e Informática",
     institution: "Universidad del Bío-Bío",
     year: "2019",
+    logo: "/logos/ubb-escudo.png",
   },
 ];
 

@@ -1,5 +1,6 @@
 import { projects } from "@/content/portfolio";
 import { Section } from "./Section";
+import { TechIcon } from "./TechIcon";
 
 export function Projects() {
   return (
@@ -9,6 +10,13 @@ export function Projects() {
           <li key={project.name} className="project">
             <h3 className="project__name">
               <a href={project.repositoryUrl}>{project.name}</a>
+              {project.icons ? (
+                <span className="project__icons">
+                  {project.icons.map((icon) => (
+                    <TechIcon key={icon} id={icon} />
+                  ))}
+                </span>
+              ) : null}
             </h3>
             <p>{project.description}</p>
             <p className="mono-values">{project.technologies.join(" · ")}</p>

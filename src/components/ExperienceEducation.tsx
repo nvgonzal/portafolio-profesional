@@ -25,7 +25,19 @@ export function ExperienceEducation() {
 
       {education.map((item) => (
         <article key={item.degree} className="entry">
-          <h3 className="entry__title">{item.degree}</h3>
+          <h3 className="entry__title">
+            {item.logo ? (
+              <span
+                className="entry__logo"
+                style={{
+                  maskImage: `url(${item.logo})`,
+                  WebkitMaskImage: `url(${item.logo})`,
+                }}
+                aria-hidden="true"
+              />
+            ) : null}
+            {item.degree}
+          </h3>
           <p className="entry__meta">
             {item.institution} · {item.year}
           </p>
